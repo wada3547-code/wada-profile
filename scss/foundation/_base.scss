@@ -1,0 +1,50 @@
+$pc: 1024px;
+$sp: 740px;
+
+body{
+  margin: 0px 100px;
+}
+//各コンテンツのh2タイトル
+@mixin title {
+text-align: center;
+padding: 0px 0px 60px;
+}
+
+@mixin title-h2 {
+  font-size: 28px;
+}
+
+@mixin title-p {
+}
+
+//グレーの背景
+
+@mixin gray-bg {
+  background-color: #eee;
+  margin: 0px -100px;
+  padding: 120px 60px;
+}
+
+
+//お問い合わせボタン
+@mixin  form {
+    padding: 15px 40px;
+    background-color:#FADB03 ;
+    border-radius: 10px;
+    color: #333;
+    text-decoration: none;
+    color: #333;
+
+  &:hover{
+    background-color:#eed00cf3 ;
+  }
+  }
+
+
+  @mixin pc {
+
+  @media screen and(max-width:1022px) {
+
+
+  }
+  }

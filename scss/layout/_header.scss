@@ -1,0 +1,109 @@
+
+
+//ヘッダー
+
+.header-logo{
+    margin-top: 15px;
+    margin-bottom: auto;
+    img{
+      width: 100%;
+    }
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: #FFF;
+    width: 100%;
+    margin-left: -100px;
+    border-bottom: solid 1px;
+
+
+  &-fixed{
+    margin-left: 60px;
+    @media screen and(max-width:500px) {
+    margin-left: 30px;
+    }
+  }
+}
+
+//ハンバーガーメニュー非表示
+#nav-button, #hm-list, .header-hm-menu{
+  display: none;
+}
+  .nav-list{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+  }
+
+  .nav-list a:nth-child(-n+3){
+    margin-right: 50px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .header-nav{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+//レスポンシブ
+    @media screen and(max-width:1024px){
+    //ハンバーガーメニュー装飾
+      #nav-button{
+        display: block;
+        background-color: #fff;
+        border:solid 1px #d6cece;
+        border-radius: 10px;
+        padding:  10px 20px;
+        margin: 15px 40px 0px 0px;
+        &:hover{
+          background-color: #eee;
+          transition: 0.3s;
+        }
+      }
+
+      .header{
+        &-hm-menu{
+          display: block;
+        }
+
+        &-logo img{
+          width: 70%;
+        }
+        &-nav{
+          display: none;
+        }
+
+      &-hm-list li{
+        list-style: none;
+        margin: 20px 0px;
+
+        &:nth-child(n + 4){
+          margin-bottom: 100%;
+        }
+      }
+      a{
+        text-decoration: none;
+        color: #333;
+      }
+      &-hm-menu{
+        height: 100%;
+      }
+      &-hm-list{
+        display: block;
+        position: absolute;
+        left: 0px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        list-style: none;
+        padding-left: 60px;
+        text-decoration: none;
+      }
+
+      }
+    }

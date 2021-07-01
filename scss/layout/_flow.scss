@@ -1,0 +1,82 @@
+
+.flow{
+    padding: 90px 0px 90px ;
+    &-title{
+    @include title; 
+    h2{
+    @include title-h2;
+    }
+    }
+    @media screen and(max-width:500px) {
+    margin: 0px -100px;
+    }
+
+    &-row1 {
+        display: flex;
+        justify-content: center;
+        @media screen and(max-width:1024px) {
+          
+          }
+      }
+      
+      &-box1 {
+        width: 30%;
+        @media screen and(max-width:1024px) {
+          
+        }
+
+      }
+      &-box2 {
+        width: 5%;
+        position: relative;
+        @media screen and(max-width:1024px) {
+          
+        }
+      }
+      &-image img {
+        width: 100%;
+      }
+      &-mark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        @media screen and(max-width:1024px) {
+          
+        }
+      }
+      &-box0{
+        margin-top: 40px;
+        @media screen and(max-width:1024px) {
+          
+        }
+    }
+    &-text{
+      padding: 0px 20px;
+    }
+
+    //レスポンシブ
+    &-category-responsive{
+      display: none;
+    
+    @media screen and(max-width:1024px) {
+      display: block;
+      
+    }
+  }
+  &-category-list{
+    @media screen and(max-width:1024px) {
+      display: none;
+    }
+  }
+  &-step-list{
+   
+    @media screen and(max-width:1024px) {
+      margin-bottom: 100px;
+        }
+
+  }
+
+
+}

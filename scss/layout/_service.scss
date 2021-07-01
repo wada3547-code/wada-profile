@@ -1,0 +1,146 @@
+//メニュー
+
+.service{
+    @include gray-bg;
+    &-title{
+        @include title;
+
+        h2{
+        @include title-h2;
+        margin: auto;
+        }
+    }
+    @media screen and(max-width:500px) {
+        padding: 120px 4px;
+        }
+
+    &-list{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 18px;
+
+        @media screen and(max-width:1022px) {
+        display: block;
+
+        }
+    }
+    &-plan{
+        width: 33.3%;
+        border:solid 1px;
+        border-radius: 10px;
+
+        @media screen and(max-width:1022px) {
+        width: 100%;
+
+        }
+
+    &:nth-child(2)  {
+    border-right: solid 1px;
+    border-left: solid 1px;
+    margin: 0px 30px ;
+
+    @media screen and(max-width:1022px) {
+    margin: 30px  0px;
+    }
+        }
+    }
+    &-plan-price{
+        text-align: center;
+        border-bottom: solid 1px;
+        border-radius: 10px 10px 0px 0px;
+
+        @media screen and(max-width:1022px) {
+        
+        }
+
+        & p{
+            margin: auto;
+            padding: 15px;
+            @media screen and(max-width:1022px) {
+      
+      
+            }
+    }
+}
+    &-plan-title{
+    text-decoration: underline 5px;
+    text-decoration-color: #FADB03 ;
+    @media screen and(max-width:1022px) {
+
+    }
+
+    }
+
+
+      //追加メニュー
+    &-inner{
+        border: solid 1px;
+        display: flex;
+        border-radius: 10px;
+        margin-top: 50px;
+        @media screen and(max-width:1022px) {
+        display: none;
+
+        }
+    }
+    &-inner-list{
+        display: flex;
+        @media screen and(max-width:1022px) {
+
+
+        }
+    }
+
+    &-inner-title {
+        display: flex;
+        align-items: center;
+        border-right: solid 1px;
+        text-align: center;
+        @media screen and(max-width:1022px) {
+
+
+        }
+    }
+
+    &-plan-title span{
+            text-decoration: none;
+            @media screen and(max-width:1022px) {
+
+
+            }
+        }
+    &-inner-menu{
+        padding: 15px;
+        @media screen and(max-width:1022px) {
+
+
+        }
+    }
+    //追加メニューレスポンシブ
+    &-plan-inner{
+        display: none;
+        @media screen and(max-width:1022px) {
+        display: block;
+        margin-top: 100px;
+        }
+    }
+    &-table{
+        padding: 20px 0px 20px 20px;
+    }
+
+//問い合わせボタン
+    &-form-button{
+        @include form;
+
+    }
+
+    &-form{
+        text-align: center;
+        margin-top: 100px;
+        @media screen and(max-width:1022px) {
+
+
+        }
+    }
+
+}
